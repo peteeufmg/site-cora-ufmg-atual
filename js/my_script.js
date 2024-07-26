@@ -30,3 +30,12 @@ $(function(){
         $('#dark_button').hide()
     });
 });
+function toggleAnswer(element) {
+    document.getElementById(`seta-${element.id}`).classList.toggle('virada');
+    var answer = element.querySelector('.faq-answer');
+    if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+    } else {
+        answer.style.display = 'block';
+    }
+}

@@ -68,11 +68,71 @@ nav{
 	width: 90px;
 }
 
+.faq{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: inherit;
+    align-content: center;
+}
+
+.faq-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+	margin: 0px 0px 5px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.faq-question-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.seta {
+	cursor: pointer;
+	transition: transform 0.3s ease;
+  }
+.seta.virada {
+	transform: rotate(180deg);
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-question h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #666;
+}
+
 .titulo{
 	display: table;
 	width: 100%;
 }
-
+.history-content{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 50px;
+}
+.timeline-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
 @media screen and (max-width: 991px) {
 	.titulo{
 		font-size: 30px;
@@ -129,7 +189,7 @@ nav{
 
 /* linha abaixo do titulo */
 .linha{
-	width: 180px;
+	width: 380px;
 	height: 2px;
 	background-color: #5c8a00;
 	margin-top: 0px;
@@ -183,15 +243,40 @@ nav{
 	width: 50%; 
 	height: 50%;
 }
-
-.sobre-mobile {display: none;}	
-@media screen and (max-width: 1600px) {
-	.sobre-desktop {display: none;}
-	.sobre-mobile {display: block;}
-	.sobre{padding-top: 46px;}
+.text-formatation{
+	margin: 15px 50px;
+	text-align: justify;
+}
+.sobre-mobile {
+	display: none;
+}	
+button:disabled, button:hover:disabled{
+	cursor: not-allowed;
+	background: #555b69;
+}
+.success, .error{
+	color: rgb(54, 51, 51) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600 !important;
+    text-align: center;
+    margin: 0px;
+}
+@media screen and (max-width: 1300px) {
+	.sobre-desktop {
+		display: none;
+	}
+	.sobre-mobile {
+		display: flex;
+		justify-content: center;
+		
+	}
+	.sobre{
+		padding-top: 46px;
+	}
 	.iframe-container {
 		padding-top: 10px;
-		padding-bottom: 25px;}
+		padding-bottom: 25px;
+	}
 }	
 
 @media screen and (max-width: 991px) {
@@ -221,7 +306,11 @@ nav{
 }
 
 /* Oficina de Robótica */
-
+.container-carousel-oficina{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 .oficina{
 	padding-top: 30px;
 }
@@ -260,62 +349,120 @@ nav{
 		width: 50%; 
 }
 }
+/*contacts*/
+.contact{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-icons{
+	display: flex;
+	margin-top: 71px;
+    justify-content: space-between;
+}
+.container{
+    display: flex;
+	margin: 50px 10px 10px 10px;
+    width: 100%;
+    justify-content: center;
+}
+.container_child{
+    display: flex;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-section {
+    background-color: #1b1d1d;
+    color: white;
+    padding: 40px;
+    flex: 1;
+}
+
+.left-section-title {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.left-section-description {
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+.right-section {
+    background-color: white;
+    padding: 40px;
+    flex: 1;
+}
+
+.right-section-title {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-input,
+.form-textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-textarea {
+    resize: vertical;
+    width: 100%;
+    max-width: 350px;
+}
+.participate{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+}
+.form-button, .participate-button {
+    padding: 10px;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+    background-color: #5c8a00;;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-button:hover, .participate-button:hover{
+    background-color: #73ac03;;
+	text-align: center;
+	color: white;
+    font-size: 20px;
+	text-decoration: none;
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+}
+/*contact*/
+
 
 
 /* Rodapé */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .text-color{
 	color:white;
 }
@@ -428,12 +575,10 @@ h2{
 
 /*contato*/
 .contato{
-	text-align: center;
 	padding-top: 20px;
 }
 
 .contato p{
-	color: #5c8a00;
 	transition: color 0.5s;
 }
 
@@ -454,8 +599,7 @@ h2{
 }
 
 .contato:hover p{
-	color: #5c8a00;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .meulink{
@@ -487,4 +631,3 @@ h2{
 .rodape p{
 	color: white;
 }
-
