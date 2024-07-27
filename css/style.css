@@ -76,8 +76,7 @@ nav{
 }
 
 .faq-container {
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
     background-color: #fff;
     padding: 20px;
 	margin: 0px 0px 5px 0px;
@@ -189,10 +188,22 @@ nav{
 
 /* linha abaixo do titulo */
 .linha{
-	width: 380px;
+	width: 320px;
 	height: 2px;
 	background-color: #5c8a00;
 	margin-top: 0px;
+}
+.linha-faq{
+	width: 100%;
+	height: 2px;
+	background-color: #5c8a00;
+	margin-top: 0px;
+}
+.linha-historia{
+	width: 150px;
+	height: 2px;
+	background-color: #5c8a00;
+	margin-top: 3px;
 }
 @media screen and (max-width: 600px) {
 	.linha {width: 90px;}
@@ -263,12 +274,9 @@ button:disabled, button:hover:disabled{
 }
 @media screen and (max-width: 1300px) {
 	.sobre-desktop {
-		display: none;
-	}
-	.sobre-mobile {
 		display: flex;
-		justify-content: center;
-		
+        flex-direction: column-reverse;
+        align-content: center;
 	}
 	.sobre{
 		padding-top: 46px;
@@ -276,20 +284,71 @@ button:disabled, button:hover:disabled{
 	.iframe-container {
 		padding-top: 10px;
 		padding-bottom: 25px;
+		margin: 1% 2% 1% 1%;
+        max-width: 100%;
+        width: 55%;
+	}
+	.iframe-container{
+		margin: 1% 2% 1% 1%;
 	}
 }	
 
 @media screen and (max-width: 991px) {
 	.iframe-container {
 		padding-top: 10px;
-		padding-bottom: 10px;}
-	.iframe-container .iframe-mobile{	
-		aspect-ratio: 16 / 9;
-		width: 90%; 
-		height: 90%;
+        padding-bottom: 10px;
+        margin: 1% 11% 1% 1%;
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
+        width: 80%;
+        height: 100%;
+	}
+	.sobre-desktop {
+		display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+	}
+	.container_child{
+		display: flex;
+    	flex-direction: column;
+	}
+	.left-section{
+	background-color: #1b1d1d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+	}
+	.contact-icons{
+		width: 74%;
+        padding: 1% 14% 1% 0%;
 	}
 }
-
+@media screen and (max-width: 760px) {
+	.contact-icons{
+		width: 59%;
+        padding: 1% 10% 1% 0%;
+        margin: 10% 30% 0% 0% !important;
+	}
+}
+@media screen and (max-width: 570px) {
+	.sobre-desktop {
+		display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+	}
+	.iframe-container {
+		margin: 1% 9% 1% 1%;
+	}
+	.contact-icons{
+		width: 59%;
+        padding: 1% 10% 1% 0%;
+        margin: 10% 41% 0% 0% !important;
+		display: flex !important;
+		flex-direction: column;
+	}
+}
 /* CoRA 2023 */
 .CoRA_2023{
 	padding-top: 30px;
