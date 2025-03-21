@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-language" content="pt-br"/>
+		<meta http-equiv="content-style-type" content="text/css"/>
+		<meta http-equiv="content-script-type" content="text/javascript"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="author" content="PETEE-UFMG"/>
+
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:url" content="http://cora.cpdee.ufmg.br/">
+		<meta property="og:title" content="Competição de Robôs Autônomos UFMG">
+		<meta property="og:site_name" content="Competição de Robôs Autônomos UFMG">
+
+		<meta property="og:description" content="Desafie-se!!! Competição de Robôs Autônomos - UFMG">
+		<meta property="og:image" content="img/share/cora.png">
+		<meta property="og:image:type" content="image/png"/>
+
+		<meta property="og:image:width" content="200"/>
+		<meta property="og:image:height" content="200"/>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="css/font_awesome/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="shortcut icon" href="img/icon/icon.png"/>
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'/> 
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+	
+		<title>CoRA</title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WDS0EZ5L"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-T4WDS0EZ5L');
+		</script>
+		<style>
+			@media only screen and (max-width: 600px){
+	.banner-desktop{
+	  display: none;
+	 }
+  .banner-mobile{
+	  display: block;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .banner-desktop{
+	  display: block;
+  }
+	.banner-mobile{
+	display: none;
+	}
+}
+		</style>
+
+	</head>
+
+	<body class="">
+		<!--Navbar-->
+		<header>
+			<nav class="navbar fixed-top navbar-dark navbar-expand-lg rounded-bottom">
+				<a class="navbar-brand" href="#">
+					<img src="img/logo/logo_cora_branca_40px.png" alt="logo">
+				</a>
+
+				<button class="navbar-toggler" data-toggle="collapse" data-target=".navbarSupportedContent"> 
+					<span class="navbar-toggler-icon"></span> 
+				</button> 
+
+				<div class="collapse navbar-collapse navbarSupportedContent" >
+					<ul class="navbar-nav">
+
+						<li class="nav-item">
+							<a class="nav-link h4 my_text-always-light" href="Oficina_de_Robotica.html">Oficina de Robótica</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link h4 my_text-always-light" href="#contato">Contato</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link h4 my_text-always-light" href="#apoie">Patrocine</a>
+						</li>
+						<!--<li class="nav-item">
+							<a class="nav-link h4 my_text-always-light" href="#parceiros">Parceiros</a>
+						</li>-->
+						<li class="nav-item dropdown">
+							<a class="nav-link h4 my_text-always-light" href="#" id="navbarDropdown_outras_edicoes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outras Edições</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown_outras_edicoes">
+								<a class="dropdown-item h4 my_text-always-light" href="./antigos/2019/2019.html">2019</a>
+								<a class="dropdown-item h4 my_text-always-light" href="./antigos/2020/2020.html">2020</a>
+								<a class="dropdown-item h4 my_text-always-light" href="./antigos/2021/2021.html">2021</a>
+								<a class="dropdown-item h4 my_text-always-light" href="./antigos/2022/2022.html">2022</a>
+								<a class="dropdown-item h4 my_text-always-light" href="./antigos/2023/2023.html">2023</a>
+							</div>
+						</li>
+						
+					</ul>	
+				</div>
+				<!--
+				<a class="navbar-brand desktop" href="https://www.youtube.com/PETEEUFMG" target="_blank"><img src="img/icon/youtube_40px.png" alt="Youtube"></a>
+				<a class="navbar-brand desktop" href="http://www.petee.cpdee.ufmg.br/" target="_blank"><img src="img/icon/petee_40px.png" alt="PETEE"></a>
+					-->
+			</div>	  
+				
+			</nav>
+		</header>
+		<!-- banner -->
+		<div id="banner" class="container-fluid" style="padding-top: 80px;">
+			<!-- BANNER DESKTOP -->
+			<div id="carousel-banner-desktop" class="carousel slide banner-desktop" data-ride="carousel" data-interval="3000">
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel-banner-desktop" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-banner-desktop" data-slide-to="1"></li>
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="">
+						<a href="./antigos/2024/Inscricoes.html">
+							<img class="img-fluid d-block w-100 img-banner-desktop" src="img/slider/inscricoes.png">
+						</a>
+					</div>
+				</div>			
+				<div class="carousel-item">
+					<div class="">
+						<a href="#apoie">
+							<img class="img-fluid d-block w-100 img-banner-desktop" src="img/slider/apoie.png">
+						</a>
+					</div>
+				</div>
+			
+				
+			  </div>
+			  <a class="carousel-control-prev" href="#carousel-banner-desktop" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carousel-banner-desktop" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<!-- BANNER MOBILE -->			
+			<div class="banner-mobile">
+			<div id="carousel-banner-mobile" class="carousel slide banner-mobile" data-ride="carousel" data-interval="10000">
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel-banner-mobile" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel-banner-mobile" data-slide-to="1"></li>
+				  <li data-target="#carousel-banner-mobile" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+			  
+				  <div class="carousel-item active">
+					  <div class="">
+						  
+						  <img class="img-fluid d-block w-100 img-banner-mobile" src="img/SliderMobile/1.png">
+						  	
+					  </div>
+				  </div>
+				  
+				  <div class="carousel-item">
+					  <div class="">
+						  <a href="Oficina_de_Robotica.html#oficinaRobotica">
+							  <img class="img-fluid d-block w-100 img-banner-mobile" src="img/SliderMobile/2.png">
+						  </a>
+					  </div>
+				  </div>
+  
+				  <div class="carousel-item">
+					  <div class="">
+						  
+						  <a href="#apoie">
+							  <img class="img-fluid d-block w-100 img-banner-mobile" src="img/SliderMobile/4.png">
+						  </a>
+					  </div>
+				  </div>
+				
+				  
+				</div>
+				<a class="carousel-control-prev" href="#carousel-banner-mobile" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-banner-mobile" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
+			
+			
+			</div>
+		</div>
+
+		<div id="Principal" class="container-fluid">
+			<!--Sobre a CoRA
+			<div id="SOBRECORA" class="sobre">
+				<div class="row justify-content-center sobre-desktop" style="padding-bottom: 50px;">
+					<div class="col-auto">
+						<h1 class="text-color titulo">Perguntas frequentes sobre a CoRA</h1>
+						<hr class="linha-faq">
+					</div>
+				</div>
+				<div class="row align-items-end sobre-desktop">
+					<div class="col-5 iframe-container">
+						<iframe class="iframe-desktop iframe-fluid" width="530px" src="https://www.youtube.com/embed/cnwCndMcPJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>					
+					</div>
+					<div class="col-lg-7 col-xl-7">
+						<div class="faq-container">
+								<div class="faq-question" id="1" onclick="toggleAnswer(this)">
+									<div class="faq-question-container">
+										<h2>O que é a CoRA?</h2>
+										<i class="fas fa-angle-down seta" id="seta-1"></i>
+									</div>
+									<p class="faq-answer">A Competição de Robôs Autônomos (CoRA) é realizada anualmente pelo Programa de Educação Tutorial da Engenharia Elétrica (PETEE) desde 2014. Atualmente, a competição conta com  3 categorias: seguidor de linha avançado, seguidor de linha mirim e robô sumô. Neste ano, a CoRA acontecerá nos dias 10, 11 e 12 de outubro na Escola de Engenharia da UFMG.</p>
+								</div>
+								<div class="faq-question" id="2" onclick="toggleAnswer(this)">
+									<div class="faq-question-container">
+										<h2>Por que participar da CoRA?</h2>
+										<i class="fas fa-angle-down seta" id="seta-2"></i>
+								    </div>
+									<p class="faq-answer">A CoRA é uma oportunidade para os estudantes aplicarem conhecimentos teóricos de robótica, automação, e programação em um ambiente prático e desafiador. O evento incentiva a criatividade, o trabalho em equipe, e a interação entre a comunidade externa à UFMG com a universidade.</p>
+								</div>
+								<div class="faq-question" id="3" onclick="toggleAnswer(this)">
+									<div class="faq-question-container">
+										<h2>Como me inscrever na CoRA?</h2>
+										<i class="fas fa-angle-down seta" id="seta-3"></i>
+								    </div>
+									<p class="faq-answer">Para se inscrever na competição, basta preencher o formulário disponível na aba de <a href="http://cora.cpdee.ufmg.br/antigos/2024/Inscricoes.html">Inscrições</a>. Após o preencimento do formulário, você será redirecionado para a página da Fundação Cristiano Ottoni para efetuar o pagamento da taxa de inscrição.</p>
+								</div>
+								<div class="faq-question" id="4" onclick="toggleAnswer(this)">
+									<div class="faq-question-container">
+										<h2>Como me preparar para a CoRA?</h2>
+										<i class="fas fa-angle-down seta" id="seta-4"></i>
+									</div>
+									<p class="faq-answer">O PETEE UFMG possui uma apostila em seu site ensinando os conceitos básicos necessários para construir o seu próprio robô seguidor de linha! Além disso, o grupo também oferta oficinas presenciais ensinando a construir um seguidor de linha básico para competir na CoRA! Ficou interessado? Entre no site do PETEE e <a href="https://www.petee.cpdee.ufmg.br/">saiba mais!</a>
+								</div>
+								<div class="faq-question" id="5" onclick="toggleAnswer(this)">
+									<div class="faq-question-container">
+									<h2>Por que patrocinar a CoRA?</h2>
+									<i class="fas fa-angle-down seta" id="seta-5"></i>
+									</div>
+									<p class="faq-answer">A CoRA atrai estudantes de ensino fundamental, médio e de graduação, que poderão se tornar futuros profissionais qualificados na área de robótica e afins, proporcionando visibilidade para a marca dentro da UFMG, em um ambiente acadêmico e tecnológico. Além disso, o patrocínio pode fortalecer a imagem da empresa como incentivadora da educação e do avanço tecnológico, além de abrir portas para colaborações e recrutamento de talentos. Ficou interessado? Entre em contato conosco para saber mais sobre nossas cotas de patrocínio!</p>
+								</div>
+								 Adicione mais perguntas e respostas conforme necessário 
+						</div>
+					</div>
+				</div>
+			</div>-->
+
+			<!-- CoRA 2024 -->
+			<div id="CoRA 2024" class="row justify-content-center text-center" style="padding-top: 96px;">
+				<div class="col-auto">
+					<h1 class="text-color titulo">CoRA 2024</h1>
+					<hr class="linha">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div class="card-deck info" style="margin-top: 30px">
+						<!-- card Inscrições -->
+						<div class="card bg-dark">
+							<div class="card-body text-center">
+								<h3 class="card-title text-light">Inscrições</h3>
+								<p class="card-text text-light"> Inscreva-se aqui para a CoRA 2024 </p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="https://forms.gle/NMCTk1xXhgyL5niz6" class="btn btn-success btn-block" target="_blank">Formulário de Inscrições</a>
+							</div>
+						</div>							
+						<!-- card Regulamento --> 
+						<div class="card bg-dark">
+							<div class="card-body text-center">
+								<h3 class="card-title text-light">Regulamentos</h3>
+								<p class="card-text text-light">Conheça as especificações de cada categoria da CoRA 2024</p>
+							</div>
+							
+							<div class="card-footer text-center">
+								<a href="doc/Regulamento_Robo_Sumo_2024.pdf" class="btn btn-success btn-block"target="_blank">Regulamento Robô Sumô</a>								
+							</div>
+
+							<div class="card-footer text-center">
+								<a href="doc/Regulamento_Seguidor_2024.pdf" class="btn btn-success btn-block" target="_blank">Regulamento Seguidor de Linha</a>
+							</div>
+
+							<div class="card-footer text-center">
+								<a href="doc/Errata_Regulamento_Seguidor_2024.pdf" class="btn btn-success btn-block" target="_blank">Errata do Regulamento do Seguidor de Linha</a>
+							</div>
+						</div>
+						<!-- card edital -->
+						<div class="card bg-dark">
+							<div class="card-body text-center">
+								<h3 class="card-title text-light">Edital</h3>								
+								<p class="card-text text-light">Veja as regras gerais da CoRA 2024</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="doc/Edital_CoRA_2024.pdf" class="btn btn-success btn-block" target="_blank">Edital CoRA 2024</a>
+							</div>
+							<div class="card-footer text-center">
+								<a href="doc/Errata_Edital_CoRA_2024.pdf" class="btn btn-success btn-block" target="_blank">Errata do Edital CoRA 2024</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+	
+	</div>
+
+		                			<!--Apoie a CoRA-->
+				
+									<div id="apoie" class="apoie">
+										<div class="row align-items-center content">
+											
+											
+											<div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 texto-apoie">
+												<div class="">
+													<div class="row justify-content-center text-center">
+														<div class="col-auto">
+															<h1 class="text-color titulo">Patrocine a CoRA</h1>
+															<hr class="linha">
+														</div>
+													</div>
+													<div class="row justify-content-center">
+														<i class="icone fas fa-book" style="font-size: 24px; margin-top: 10px;"></i>
+													</div>
+												</div>
+												<div class="text-justify" style="padding: 10px;">
+													<p class="h5 text justify text-color">Para desenvolver a CoRA, o PETEE-UFMG conta sempre com o apoio de seus parceiros e patrocinadores, que auxiliam no desenvolvimento do evento de diversas maneiras. Esse apoio é vital para que a CoRA possa acontecer.
+														</p>
+													<p class="h5 text justify text-color">
+														Todo patrocinador, terá direito a divulgação da marca nos eventos da CoRA, além dos outros benefícios especificados para cada cota de patrocínio, de acordo com o que for escolhido pelos apoiadores. 														
+														
+													</p>
+													<p class="h5 text justify text-color">
+														Todas essas informações podem ser encontradas na Carta de Patrocínio, disponível para ser enviada caso haja interesse. Entre em contato pelo nosso e-mail e participe de um dos maiores eventos da Escola de Engenharia da UFMG.														
+														
+													</p>
+													
+													</div>
+											</div>
+
+											<div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 img-apoie">
+											
+												<img class="d-block w-100 img-fluid img-thumbnail" src="img/slider/patrocinio1.png" alt="Apoie a CoRA">
+														
+											</div>
+										</div>
+									</div>
+
+			<!-- contato
+			<div id="contato" class="contato">
+				<div class="row justify-content-center text-center">
+					<div class="col-auto">
+						<h1 class="text-color titulo">CONTATO</h1>
+						<hr class="linha">
+					</div>
+				</div>
+				<section id="contact" class="contact">
+					<div class="container">
+						<div class="container_child">
+							<div class="left-section">
+								<h1 class="left-section-title">Deixe sua marca</h1>
+								<p class="left-section-description content_about_text text-formatation">	A Competição de Robôs Autônomos (CoRA) é realizada anualmente pelo Programa de Educação Tutorial da Engenharia Elétrica (PETEE) desde 2014 e conta com a participação de alunos do ensino fundamental, médio e graduação. O evento incentiva a robótica, o trabalho em equipe e a interação entre a comunidade externa à UFMG com a universidade.
+								</p>
+
+								<p class="left-section-description content_about_text text-formatation">	Caso queira entrar em contato conosco, basta enviar uma mensagem na caixinha ao lado. Lembre-se de preencher todos os campos antes de enviar. Também estamos disponíveis pelo Instagram (@cora_ufmg) ou pelo WhatsApp (+55 31 3409-1013).
+								</p>
+
+								<p class="left-section-description content_about_text text-formatation"> Veja nossos conteúdos 
+																						em vídeos pelo YouTube!<br>Estamos sempre abertos para visitas 
+																						na <a target="_blank" href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US" class="meulink">
+																						UFMG - Campus Pampulha, Escola de Engenharia, Bloco 3, Sala 1050
+																						<i class="fas fa-map-marker-alt icone" style="padding-left: 5px; font-size: 16px;"></i></a>
+								</p>-->
+				
+				<!--links para contato
+				<div class="contact-icons">
+					 email
+					<div class="col-lg-2 col-md-4 col-sm-6 contato">
+						<a href="mailto:cora.ufmg@gmail.com">
+							<div>
+								<i class="fas fa-envelope icone-contato rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+							</div>
+						</a>
+					</div>
+					 instagram
+					<div class="col-lg-2 col-md-4 col-sm-6 contato">
+						<a href="https://www.instagram.com/cora_ufmg/" target="_blank">
+							<div>
+								<i class="fab fa-instagram icone-contato rounded-circle" style="font-weight: 500; padding-top: 12px; padding-bottom: 12px; padding-left: 14px; padding-right: 14px"></i>
+							</div>
+						</a>
+					</div>
+					 youtube
+					<div class="col-lg-2 col-md-4 col-sm-6 contato">
+						<a href="https://www.youtube.com/PETEEUFMG" target="_blank">
+							<div>
+								<i class="fab fa-youtube icone-contato rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 10px; padding-right: 10px"></i>
+							</div>
+						</a>
+					</div>
+					 telefone
+					<div class="col-lg-2 col-md-4 col-sm-6 contato">
+						<a href="tel:31-34091013">
+							<div>
+								<i class="fas fa-phone-alt icone-contato rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+							</div>
+						</a>
+					</div>				
+				</div>
+			</div>
+							<div id="Sponsor" class="right-section">
+								<h2 class="right-section-title">Contate-nos</h2>
+								<form class="contact-form" action="https://formspree.io/f/xzzpdeyl" method="POST" data-form>
+									<label class="form-label" for="form-name">Nome:</label>
+									<input class="form-input" type="text" id="form-name" name="name" required>
+									
+									<label class="form-label" for="form-email">Email:</label>
+									<input class="form-input" type="email" id="form-email" name="email" required>
+									
+									<label class="form-label" for="form-company">Empresa:</label>
+									<input class="form-input" type="text" id="form-company" name="company" required>
+									
+									<label class="form-label" for="form-phone">Telefone:</label>
+									<input class="form-input" type="tel" id="form-phone" name="phone">
+									
+									<label class="form-label" for="form-message">Mensagem</label>
+									<textarea class="form-textarea" id="form-message" name="message"></textarea>
+									
+									<button class="form-button" type="submit" data-button>Enviar</button>
+								</form>
+								<div class="confirmation-message" data-message></div>
+							</div>
+						</div>
+					</div>
+				</section>-->
+				
+			</div>
+			
+			<!-- parceiros -->
+			<div id="parceiros" class="parceiros">
+				<div class="row justify-content-center text-center">
+					<div class="col-auto">
+						<h1 class="text-color titulo">PARCEIROS</h1>
+						<hr class="linha">
+					</div>
+				</div>
+				<!--
+				<div class="row justify-content-center">
+					<i class="icone fas fa-robot" style="font-size: 24px; margin-top: 10px; margin-bottom: 30px;"></i>
+				</div>
+				-->
+				<!--parceiros-->
+				<div class="row justify-content-center">
+					<!-- apoio -->
+					<div class="col-md-5 col-sm-12 text-center">
+						<h5 class="text-color sub-titulo" style="margin-top: 20px; margin-bottom:5px; font-size:22px;">APOIO</h5>
+						<h5 class="text-color" style="margin-bottom:10px; font-size:22px;"><i class="fas fa-angle-down"></i></h5>
+						<div class="row justify-content-center">
+							<!-- escola de engenharia -->
+							<div class="col-md-5" style="margin-top: 15px;">
+								<a href="https://www.eng.ufmg.br" target="_blank"><img class="img-fluid img-dark-theme logo" src="img/logo/engenharia_branco.png" alt="Escola de Engenharia - UFMG"></a>
+								<a href="https://www.eng.ufmg.br" target="_blank"><img class="img-fluid img-light-theme logo" src="img/logo/engenharia_preto.png" alt="Escola de Engenharia - UFMG"></a>
+							</div>
+							<!-- ufmg -->
+							<div class="col-md-5" style="margin-top: 15px;">
+								<a href="https://www.ufmg.br/" target="_blank"><img class="img-fluid img-dark-theme logo" src="img/logo/ufmg_branco.png" alt="UFMG"></a>
+								<a href="https://www.ufmg.br/" target="_blank"><img class="img-fluid img-light-theme logo" src="img/logo/ufmg_preto.png" alt="UFMG"></a>
+							</div>
+							<!-- fco -->
+							<div class="col-md-5" style="margin-top: 15px;">
+								<a href="http://www.fco.eng.ufmg.br/" target="_blank"><img class="img-fluid img-dark-theme logo" src="img/logo/fco_branco.png" alt="FCO"></a>
+								<a href="http://www.fco.eng.ufmg.br/" target="_blank"><img class="img-fluid img-light-theme logo" src="img/logo/fco_azul.png" alt="FCO"></a>
+							</div>
+						</div>
+					</div>
+					<!-- patrocinio --> 
+					<div class="col-md-5 offset-md-1 col-sm-12 text-center">
+						<h5 class="text-color sub-titulo" style="margin-top: 20px; margin-bottom:5px; font-size:22px;">PATROCÍNIO</h5>
+						<h5 class="text-color" style="margin-bottom:10px; font-size: 22px;"><i class="fas fa-angle-down"></i></h5>
+						<!--
+							<div class="row justify-content-center">
+							 Makerhero
+							<div class="col-md-6 col-sm-6" style="margin-top: 30px;">
+								<a href="https://www.makerhero.com/" target="_blank"><img class="img-fluid logo" src="img/patrocinadores/makerhero/logo.png" alt="Makerhero"></a>
+							</div>
+						</div> -->
+					</div>
+					<!-- realização -->
+					<div class="col-md-5 col-sm-12 text-center" style="margin-top: 20px;">
+						<h5 class="text-color sub-titulo" style="margin-top: 20px; margin-bottom:5px; font-size:22px;">REALIZAÇÃO</h5>
+						<h5 class="text-color" style="margin-bottom:10px; font-size:22px;"><i class="fas fa-angle-down"></i></h5>
+						<div class="row justify-content-center">
+							<!-- petee -->
+							<div class="col-md-6" style="margin-top: 15px;">
+								<a class="img-fluid logo" href="http://www.cpdee.ufmg.br/~petee/" target="_blank"><img class="img-fluid img-dark-theme logo" src="img/logo/logo_petee_branca_900x300.png" alt="PETEE UFMG"></a>
+								<a class="img-fluid logo" href="http://www.cpdee.ufmg.br/~petee/" target="_blank"><img class="img-fluid img-light-theme" src="img/logo/logo_petee_azul_900x300.png" alt="PETEE UFMG"></a>
+							</div>
+						</div>
+						<!-- FOTO DA EQUIPE ORGANIZADORA
+						<div class="row justify-content-center align-items-center">
+							<div class="text-center" style="margin-top: 40px;">
+								<button type="button" class="btn btn-success" style="font-weight: 600;" data-toggle="modal" data-target="#organizacaoVirtual">VEJA A EQUIPE ORGANIZADORA DA CORA VIRTUAL</button>
+							</div>
+						</div>
+						<div class="modal fade" id="organizacaoVirtual" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header bg-success text-color">
+									<h5 class="modal-title" id="exampleModalLabel">Equipe Organizadora da CoRA Virtual</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									</div>
+									<div class="modal-body">
+										<img class="img-fluid rounded" src="./img/fotos2019/Equipe2019.JPG">
+										<br><br>
+										<p class="text-justify"><b>Docente:</b> Victor Flores Mendes</p>
+										<p class="text-justify"><b>Discentes:</b> Afonso Henrique Gomes de Souza, Alessandro Magno Cristian Pinheiro, Alice Helena Teixeira Silva, Amanda Andreatta Campolina Moraes, Arthur Henrique Dias Nunes, Ary Vinícius Reis Portes, Diêgo Maradona Gonçalves dos Santos, Giovanna Moreira Puppin Zago, Iago Conceição Gregorio, Isabela Braga da Silva, Israel Filipe Silva Amaral, Lorran Pires Venetillo Dutra, Michael Cassemiro Oliveira, Sarah Carine de Oliveira, Thais Ávila Morato, Vítor Gabriel Reis Caitité, Willian Braga da Silva</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--rodapé-->
+		<footer style="margin-top:50px;">
+			<div class="rodape container-fluid text-center rounded-top" style="padding:0px;">
+				<!--<img class="img-fluid" src="img/logo/logo_petee_preta_40px.png">-->
+				<div style="height: 15px;"></div>
+				<p style="margin-bottom:0px;">COPYRIGHT © 2020 PETEE UFMG</p>
+				<p><small>Arthur Nunes, Thais Morato, Tiago Bonfim</small></p>
+				<div style="height: 1px;"></div>
+			</div>
+			
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+			<script src="js/my_script.js"></script>
+			<script src="js/send-email.js"></script>
+			<!-- <script>
+				$(document).ready(function(){
+					$("#myModal").modal('show');
+				});
+			</script>
+			 -->
+		</footer>
+		
+	</body>
+
+</html>
