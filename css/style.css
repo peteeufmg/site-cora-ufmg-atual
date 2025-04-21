@@ -77,43 +77,56 @@ nav{
 
 .faq-container {
     width: 100%;
-    background-color: #fff;
+    background-color: #000; /* Fundo preto */
     padding: 20px;
-	margin: 0px 0px 5px 0px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0px 0px 5px 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra clara para contraste */
+    color: #fff; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 .faq-question {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333; /* Linha divisória mais escura */
     cursor: pointer;
     padding: 10px 0;
+    transition: all 0.3s ease; /* Efeito suave ao abrir/respostas */
 }
-.faq-question-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+
+.faq-question-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff; /* Texto branco */
 }
+
+.faq-question h2 {
+    color: #fff; /* Títulos em branco */
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.faq-answer {
+	display: none;
+    padding: 10px 0;
+    color: #e0e0e0; /* Texto ligeiramente mais suave */
+}
+
+.faq-answer a {
+    color: #4CAF50; /* Verde para links (ou use sua cor temática) */
+    text-decoration: underline;
+}
+
 .seta {
-	cursor: pointer;
-	transition: transform 0.3s ease;
-  }
+    color: #fff; /* Ícones em branco */
+    transition: transform 0.3s ease;
+}
+
 .seta.virada {
 	transform: rotate(180deg);
 }
 
 .faq-question:hover {
-    background-color: #f9f9f9;
-}
-
-.faq-question h2 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.faq-answer {
-    display: none;
-    padding: 10px 0;
-    color: #666;
+    background-color: #111; /* Tom mais claro de preto */
 }
 
 .titulo{
@@ -238,6 +251,7 @@ nav{
 .sobre{
 	padding-top:96px;
 }
+
 .iframe-container {
 	align-content: center;
     text-align: center;
@@ -254,6 +268,7 @@ nav{
 	width: 50%; 
 	height: 50%;
 }
+
 .text-formatation{
 	margin: 15px 50px;
 	text-align: justify;
