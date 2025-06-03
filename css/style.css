@@ -199,6 +199,27 @@ nav{
 	background-color: black;
 }
 
+/* Estilo do botão na navbar */
+.navbar .btn-success {
+    background-color: #218838 !important; /* Verde mais escuro */
+	margin-right: 5px;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar .btn-success:hover {
+    background-color: #1e7e34 !important; /* Tom mais escuro no hover */
+}
+
+@media (max-width: 992px) {
+    .navbar .btn-success {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
 /* linha abaixo do titulo */
 .linha{
 	width: 320px;
